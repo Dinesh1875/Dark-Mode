@@ -1,0 +1,35 @@
+      .togbefore {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px 100px;
+        background-color: #e4e7ea;
+        border-radius: 50px;
+        filter: drop-shadow(5px 5px 2px #d3d3d3);
+      }
+      .togbefore::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #75e505;
+        transition: all 0.2s ease-in;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .togafter::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 130px;
+        transition: all 0.2s ease-in;
+      }
+      .lightmode {
+        background-color: #fff;
+      }
+      .darkmode {
+        background-color: #000;
+      }
